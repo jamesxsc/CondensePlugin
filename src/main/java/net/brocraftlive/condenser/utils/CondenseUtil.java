@@ -1,3 +1,11 @@
+/*
+* 
+* LICENSED UNDER APACHE LICENSE 2.0
+* COPYRIGHT 2018 615283 (James Conway) & lewis2470(Lewis Hitching)
+* DO NOT REMOVE THIS NOTICE FROM THIS FILE OR ANY OTHER FILE WITHIN THIS REPOSITORY CONTAINING THIS NOTICE
+* 
+*/
+
 package net.brocraftlive.condenser.utils;
 
 import net.brocraftlive.condenser.CondensePlugin;
