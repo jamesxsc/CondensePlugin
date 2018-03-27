@@ -25,6 +25,8 @@ public class CondenseUtil {
         int iron = 0;
         int gold = 0;
         int diamond = 0;
+        int emerald = 0;
+        int redstone = 0;
 
         int bypass = 0;
         int belowMin = 0;
@@ -45,6 +47,12 @@ public class CondenseUtil {
             }
             else if (item.getType().equals(Material.DIAMOND)) {
                 diamond = diamond + item.getAmount();
+            }
+            else if (item.getType().equals(Material.EMERALD)) {
+                emerald = emerald + item.getAmount();
+            }
+            else if (item.getType().equals(Material.REDSTONE)) {
+                redstone = redstone + item.getAmount();
             }
         }
 
@@ -94,6 +102,30 @@ public class CondenseUtil {
                 p.getInventory().addItem(new ItemStack(Material.DIAMOND_BLOCK, 1));
             }
             p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aSuccessfully condensed DIAMOND"));
+        }
+
+        //Emerald condense
+        if (emerald==0) bypass += 1;
+        else if (emerald<9) belowMin+=1;
+        else {
+            while (emerald >= 9) {
+                emerald = emerald - 9;
+                p.getInventory().removeItem(new ItemStack(Material.EMERALD, 9));
+                p.getInventory().addItem(new ItemStack(Material.EMERALD_BLOCK, 1));
+            }
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aSuccessfully condensed EMERALD"));
+        }
+
+        //Redstone condense
+        if (redstone==0) bypass += 1;
+        else if (redstone<9) belowMin+=1;
+        else {
+            while (redstone >= 9) {
+                redstone = redstone - 9;
+                p.getInventory().removeItem(new ItemStack(Material.REDSTONE, 9));
+                p.getInventory().addItem(new ItemStack(Material.REDSTONE_BLOCK, 1));
+            }
+            p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aSuccessfully condensed REDSTONE"));
         }
 
         //If no ingots were found see help for ingots
