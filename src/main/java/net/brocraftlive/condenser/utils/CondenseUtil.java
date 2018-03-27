@@ -1,3 +1,11 @@
+/*
+* 
+* LICENSED UNDER APACHE LICENSE 2.0
+* COPYRIGHT 2018 615283 (James Conway) & lewis2470(Lewis Hitching)
+* DO NOT REMOVE THIS NOTICE FROM THIS FILE OR ANY OTHER FILE WITHIN THIS REPOSITORY CONTAINING THIS NOTICE
+* 
+*/
+
 package net.brocraftlive.condenser.utils;
 
 import net.brocraftlive.condenser.CondensePlugin;
@@ -129,7 +137,7 @@ public class CondenseUtil {
         }
 
         //If no ingots were found see help for ingots
-        if (bypass==4) p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUse &l/condense help &cto view ingots you can condense"));
+        if (bypass==6) p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&cUse &l/condense help &cto view ingots you can condense"));
 
         //If not enough ingots/coal were found
         //TODO @lewis2470 change this message to what you want V
