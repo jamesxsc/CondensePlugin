@@ -13,6 +13,6 @@ commands:
     description: Condense ingots to blocks
     usage: /condense
 permissions:
-  brocraft.condense:
+  condenser.use:
     description: Allows use of /condense command
     default: true

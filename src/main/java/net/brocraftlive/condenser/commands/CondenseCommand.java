@@ -27,7 +27,7 @@ public class CondenseCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             if (args.length == 0) {
-                if (!sender.hasPermission("brocraft.condense")) player.sendMessage(ChatColor.RED + "You do not have permission to do this!");
+                if (!sender.hasPermission("condenser.use")) player.sendMessage(ChatColor.RED + "You do not have permission to do this!");
                 else {
                     cp.getCondenseUtil().condenseItems(player);
                 }
