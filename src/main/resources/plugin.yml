@@ -1,8 +1,12 @@
-name: LewisPlugin
-version: 1.0
-main: net.brocraftlive.LewisPlugin
+name: ${project.name}
+version: ${project.version}
+main: net.brocraftlive.condenser.CondensePlugin
+authors: [615283, lewis2470]
 commands:
   condense:
     description: Condense ingots to blocks
-    permission: brocraft.condense
     usage: /condense
+permissions:
+  brocraft.condense:
+    description: Allows use of /condense command
+    default: true
