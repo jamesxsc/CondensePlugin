@@ -27,7 +27,7 @@ public class CondenseCommand implements CommandExecutor {
             }
             else {
                 player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&2&l&m--&2&l[ &2Condense-able types&2&l ]&2&l&m--"));
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aCoal &2|&a Iron Ingot &2|&a Gold Ingot &2|&a Diamond"));
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&aCoal &2|&a Iron Ingot &2|&a Gold Ingot &2|&a Diamond &2|&a Emerald &2|&a Redstone"));
                 return true;
             }
         } else {
